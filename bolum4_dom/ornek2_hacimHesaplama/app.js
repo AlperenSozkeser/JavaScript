@@ -12,3 +12,19 @@ function hesapla() {
 const buton = document.querySelector(".btn");
 buton.style.color = "red";
 buton.style.backgroundColor = "black";
+
+/*
+-Biz DOM API sayesinde html elemanlarına erişiyoruz ve 
+-Ekleme ,Silme, Güncelleme Stillendirme ve Okuma yapabliryoruz.
+
+-Erişim Metotları
+ Selector
+  - getElementById()
+  - getElementByTagName() bu bize dizi dönderir
+  - getElementByClassName() bu bize dizi döndürür
+  - QuerySelector() Biz buraya(".xx") yazarsak class alırız # ile ararsak ıd alırı
+*/
+
+/* 
+-
+*/
