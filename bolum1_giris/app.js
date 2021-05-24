@@ -147,6 +147,16 @@ console.log("yaşınız : " + age );
 const result =(age>=18) ? `${name1} ehliyet alabilir ` : `${name1} ehliyet alamaz`; 
 
 
+const sayı =4;
+
+console.log(String(sayı),sayı); // çıktı olarak 4 4 alırız aöa birisi String diğeri number data tiipinde olur 
+
+// 0,null undefined , NaN , false dışında her şey boolean olarak true gösterilir
+
+
+
+
+
 
 
 

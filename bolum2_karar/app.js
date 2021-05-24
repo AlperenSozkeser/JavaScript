@@ -63,7 +63,7 @@ console.log(gunAdi);
 const maas = prompt("Maasinizi giriniz:");
 const calismaSuresi = prompt("Calisma suresini giriniz:");
 const zamliMaas =
-  calismaSuresi > 10 ? maas * 1.5 : calismaSuresi > 5 ? maas * 1.2 : maas * 1.1;
+  calismaSuresi > 10 ? maas * 1.5 : (calismaSuresi > 5 ? maas * 1.2 : maas * 1.1);
 console.log(zamliMaas);
 
 // ÖRNEK
