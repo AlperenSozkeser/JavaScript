@@ -1,8 +1,18 @@
 /*global bir kapsamlı olacaksa ismi main.css olur ama 
 dosya ile ilgiliyse o dosya ismiyle aynı olabilir*/
 
-.btn{
-width: 100px;
+.btn {
+  width: 100px;
+  height: 40px;
+}
 
-
+.textbox,
+.dil {
+  width: 200px;
+  height: 40px;
+  border: 2px black solid;
+}
+.yazı {
+  font-size: large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
