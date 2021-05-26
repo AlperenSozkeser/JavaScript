@@ -31,10 +31,12 @@ const h1 = document.createElement("h1");
 const text = document.createTextNode("Programlama Dilleri");
 h1.appendChild(text); // burada içerisinde yazı olan bir h1 oluşturduk ve koyacağımız yeri belirleyip koymamız gerekir.
 sonDiv.after(h1); //burada h1'i sonDivden sonra koyduk yada beforeda yapabilriz.
-h1.style.marginTop = "20px";
-h1.style.color = "grey";
-h1.style.textAlign = "left";
-h1.style.marginBottom = "10px";
+h1.className="yeni-h1";
+//** burada class ismi verdik ve css'de yaptık stillendirmeyi ama istersek  burada da aşağıdaki gibi yapabiliriz.
+// h1.style.marginTop = "20px";
+// h1.style.color = "grey";
+// h1.style.textAlign = "left";
+// h1.style.marginBottom = "10px";
 
 const ekle = (document.querySelector(".ekle").onclick = function () {
   // ekleme yapılacak elemanı aldım
