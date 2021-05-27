@@ -1,4 +1,25 @@
-body {
-  text-align: center;
-  margin-top: 300px;
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* vw: tarayıcının aktif alanı view port denir burada biz tarayıcı alanının 100 de 100 ünü kullanmak istiyoruz */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  border-color: black;
+  padding: 20px;
+  background-color: rgb(150, 133, 113);
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(129, 129, 98);
+}
+
+h1 {
+  background-color: white;
+  border-radius: 5px;
 }
