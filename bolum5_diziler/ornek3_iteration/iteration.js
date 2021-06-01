@@ -182,22 +182,46 @@ console.log(zamlıTlFiyatlar); // Buradan biz "1. ürünün zamlı fiyatı : 132
 document.querySelector(".zamli-fiyat").innerHTML = zamlıTlFiyatlar;
 console.log(zamlıTlFiyatlar);
 
-
 // ==================== filter() Methodu ==============
 
 // tlFiyatlar listesinde fiyatı 250 TL den az olanlari ayri bir diziye saklayalim.
 const kucuk250 = tlFiyatlar.filter((d) => d < 250);
 console.log(kucuk250);
 
-
 //fiyati 350 küçük olanlari yazdiriniz.
 tlFiyatlar.filter((d) => d < 350).forEach((x) => console.log(x));
-
 
 // Küçükten büyüğe sıralama
 console.log(tlFiyatlar.sort((a, b) => a - b));
 
-
 // Büyükten küçüğe  sıralama
 console.log(tlFiyatlar.sort((a, b) => b - a));
+
+// =============== PIPELINE ===================
+
+const maaslar = [3000, 5000, 4000, 6000, 6500];
+
+// ornek: Maası 4000 tl den düşük olanlara %50 zam yapmak istiyoruz
+
+const yeniMaaslar = maaslar.filter((x) => x <= 4000).map((x) => x * 1.5);
+console.log(yeniMaaslar); // [4500,6000] çıktı alırız
+
+// eğer ForEach ile sonlandırırsak yazdırırız ama diğerleriyle yeni bir
+//dizi oluştururuz.
+
+// Ornek: ilk harfe göre seçtik
+
+const adlar = ["Samet", "Hakkı", "Duygu", "Emrullah", "Bilal", "Ali", "Ahmet"];
+
+const isimBul = function (h) {
+  const buyukHarf = h.toUpperCase();
+  adlar.filter((x) => x.startsWith(buyukHarf)).forEach((x) => console.log(x));
+};
+
+isimBul("A");
+
+// maaslar toplamını bulunuz.
+const toplam = maaslar.reduce((x,y) => x+y , 0);// Burada 0 ilk x değeridir
+console.log(toplam);                           //duruma göre değer verilebilir
+
 
