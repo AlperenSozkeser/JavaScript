@@ -8,10 +8,11 @@ const birey = {
   konum: "Samsun",
   email: "can@gmail.com",
 };
-// ? 1. Yontem Klasik yontem
+// ? 1. YONTEM Klasik yontem
 let ad1 = birey.ad;
 let konum1 = birey.konum;
 console.log(ad1, konum1);
+
 // * 2. YONTEM (OBJECT DESTRUCTRING)
 // ! Destructing kullanilirken "Key" isimleri nesneninki ile ayni olmalidir. Aksi takdirde undefined degerler donerler
 const { ad, konum, email } = birey; // birey nesnesindeki property'leri ayristirir.
